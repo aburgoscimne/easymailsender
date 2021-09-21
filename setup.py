@@ -27,7 +27,7 @@ dev_packages = [
 
 setup(
     name="mailsender",
-    version="0.1.0",
+    version="0.2.0",
     license="Apache",
     description="A simple mail sender.",
     author="Alberto Burgos Plaza",
