@@ -8,7 +8,7 @@ from typing import List
 from typing_extensions import Literal
 
 
-class MailSender:
+class EasyMailSender:
     def __init__(
         self,
         host: str,
@@ -50,12 +50,12 @@ class MailSender:
 
         message.attach(part)
 
-        server = smtplib.SMTP(self.host, self.port)
         if self.protocol == "TLS":
+            server = smtplib.SMTP(self.host, self.port)
             context = ssl.create_default_context()
             server.starttls()
-        elif self.protocl == "SSL":
-            pass  # ToDo
+        elif self.protocol == "SSL":
+            server = smtplib.SMTP_SSL(self.host, self.port)
 
         server.login(self.user, self.password)
         server.sendmail(sender, targets, message.as_string())

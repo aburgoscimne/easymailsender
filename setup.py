@@ -26,13 +26,13 @@ dev_packages = [
 ]
 
 setup(
-    name="mailsender",
-    version="0.2.0",
+    name="easymailsender",
+    version="0.1.0",
     license="Apache",
-    description="A simple mail sender.",
+    description="An easy mail sender.",
     author="Alberto Burgos Plaza",
-    author_email="aburgos@cimne.upc.edu",
-    url="https://github.com/aburgoscimne/mail-sender",
+    author_email="albertoburgosplaza@gmail.com",
+    url="https://github.com/aburgoscimne/easymailsender",
     python_requires=">=3.6",
     packages=find_namespace_packages(),
     install_requires=[required_packages],
