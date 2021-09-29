@@ -11,6 +11,9 @@ BASE_DIR = "." if BASE_DIR is None else BASE_DIR
 with open(f"{BASE_DIR}/requirements.txt") as file:
     required_packages = [ln.strip() for ln in file.readlines()]
 
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
+
 dev_packages = [
     "black==21.9b0",
     "flake8==3.9.2",
@@ -26,14 +29,19 @@ dev_packages = [
 ]
 
 setup(
-    name="easymailsender",
-    version="0.1.0",
+    name="simplemailsender",
+    version="0.2.0",
     license="Apache",
-    description="An easy mail sender.",
+    description="A simple mail sender.",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     author="Alberto Burgos Plaza",
     author_email="albertoburgosplaza@gmail.com",
-    url="https://github.com/aburgoscimne/easymailsender",
-    python_requires=">=3.6",
+    url="https://github.com/aburgoscimne/simplemailsender",
+    keywords=[
+        "e-mail",
+    ],
+    # python_requires=">=3.6",
     packages=find_namespace_packages(),
     install_requires=[required_packages],
     extras_require={

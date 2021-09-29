@@ -8,7 +8,7 @@ from typing import List
 from typing_extensions import Literal
 
 
-class EasyMailSender:
+class SimpleMailSender:
     def __init__(
         self,
         host: str,

@@ -1,13 +1,13 @@
-# Easy Mail Sender
+# Simple Mail Sender
 A simple mail sender.
 
 ## Usage
 ```python
-from easymailsender.easymailsender import EasyMailSender
+from simplemailsender.simplemailsender import SimpleMailSender
 
-ems = EasyMailSender("<SMTP Server>", "<SMTP Port>", "<SSL or TLS>", "<User>", "<Password>")
+sms = SimpleMailSender("<SMTP Server>", "<SMTP Port>", "<SSL or TLS>", "<User>", "<Password>")
 
-ems.send(
+sms.send(
     "<Sender e-mail>",
     ["<Recipients e-mail>"],
     "<Subject>",
