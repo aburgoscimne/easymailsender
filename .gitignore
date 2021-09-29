@@ -2,3 +2,4 @@ venv
 dist
 mailsender.egg-info
 __pycache__
+*.egg*
