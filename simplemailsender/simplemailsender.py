@@ -4,8 +4,7 @@ from email import encoders
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.mime.base import MIMEBase
-from typing import List
-from typing_extensions import Literal
+from typing import List, Literal
 
 
 class SimpleMailSender:
